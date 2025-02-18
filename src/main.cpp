@@ -10,9 +10,9 @@ int main() {
   // Uncomment this block to pass the first stage
   cout << "$ ";
 
-  // string input;
-  // getline(std::cin, input);
-  // cout << input << ": command not found" << endl;
+  string input;
+  getline(std::cin, input);
+  cout << input << ": command not found" << endl;
 
   while(true){
     string input;
