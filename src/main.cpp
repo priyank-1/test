@@ -1,6 +1,5 @@
 #include <iostream>
-#include <string.h>
-using namespace std;
+
 
 int main() {
   // Flush after every std::cout / std:cerr
@@ -8,17 +7,17 @@ int main() {
   std::cerr << std::unitbuf;
 
   // Uncomment this block to pass the first stage
-  cout << "$ ";
+  std::cout << "$ ";
 
-  string input;
+  std::string input;
   std::getline(std::cin, input);
-  cout << input << ": command not found" << endl;
+  std::cout << input << ": command not found" << std::endl;
   // cin.ignore();
 
   while(true){
-    cout << "$ ";
-    string input;
-    getline(std::cin, input);
-    cout << input << ": command not found" << endl;
+    std::cout << "$ ";
+    std::string input;
+    std::getline(std::cin, input);
+    std::cout << input << ": command not found" << std::endl;
   }
 }
