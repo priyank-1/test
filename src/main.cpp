@@ -13,9 +13,10 @@ int main() {
   string input;
   std::getline(std::cin, input);
   cout << input << ": command not found" << endl;
-  cin.ignore();
+  // cin.ignore();
 
   while(true){
+    cout << "$ ";
     string input;
     getline(std::cin, input);
     cout << input << ": command not found" << endl;
