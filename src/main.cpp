@@ -1,5 +1,5 @@
 #include <iostream>
-#include <bits/stdc++.h>
+#include <string.h>
 using namespace std;
 
 int main() {
@@ -11,8 +11,9 @@ int main() {
   cout << "$ ";
 
   string input;
-  getline(std::cin, input);
+  std::getline(std::cin, input);
   cout << input << ": command not found" << endl;
+  cin.ignore();
 
   while(true){
     string input;
