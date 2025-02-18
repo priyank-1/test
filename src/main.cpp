@@ -14,7 +14,8 @@ int main() {
   getline(std::cin, input);
   cout << input << ": command not found" << endl;
 
-  while(getline(cin,input)){
+  while(true){
+    getline(std::cin, input);
     cout << input << ": command not found" << endl;
   }
 }
